@@ -20,7 +20,7 @@
 ## Descrição do projeto 
 
 <p align="justify">
-- No atual momento de crise e de forte concorrência no mercado, um empresário precisa de agilidade e praticidade na gestão empresarial. Se faz necessário desenvolver soluções que facilitem a vida do empresário durante o uso do sistema. E o gestor de preços precisa ser um facilitador e não mais um obstáculo. Fazer os preços de um por um é dispendioso, tanto na importação de nota fiscal de entrada bem como na gestão de preços. Aumentar a praticidade no uso do sistema, principalmente na importação de nota fiscal de entrada, pode fazer com que o cliente fique apaixonado e acomodado com o sistema, podendo resultar até mesmo em indicações.
+- No atual momento de crise e de forte concorrência no mercado, o empresário precisa de agilidade e praticidade na gestão empresarial. Se faz necessário desenvolver soluções que facilitem a vida do empresário durante o uso do sistema. E o gestor de preços precisa ser um facilitador e não mais um obstáculo. Fazer os preços de um por um é dispendioso, tanto na importação de nota fiscal de entrada bem como na gestão de preços. Aumentar a praticidade no uso do sistema, principalmente na importação de nota fiscal de entrada, pode fazer com que o cliente fique apaixonado e acomodado com o sistema, podendo resultar até mesmo em indicações.
 </p>
 
 
