@@ -73,6 +73,66 @@ Acucar 19.0
 - Abaixo o código que realiza a gestão de preços de forma inteligente. Ele pega o valor e verifica se é pra arredondar pra mais ou pra menos, depois verifica se é pra retornar um valor redondo ou quebrado em 00,50. O código pode ser implementado da forma como está ou pode ser removido a condição "praMenos" e deixar como padrão sempre arredondar pra cima.
 </p>
 
+~~~java
+public class GestaoDePreco {
+
+    // A Classe GestaoDePreco.java arredona pra mais ou pra menos
+    // usando a condição (0.50f) para quebrar o valor no meio (50 centavos) ou
+    // usando a condição (1) para arrendondar o valor para inteiro.
+
+    public static float GestorDePrecos(float porcentagem, String arredondaMaisMenos, float preco, float casaDecimal) {
+        float valorFinal = 0;
+        // Por padrao o codigo vai sempre aumentar o valor.
+        if (arredondaMaisMenos.equals("praMais") || arredondaMaisMenos.equals("")) {
+            if (casaDecimal == 0.50f) {
+                valorFinal = (((porcentagem / 100) * preco) + preco);
+                float resultado = valorFinal - (int) valorFinal;
+                if (resultado < 0.5) {
+                    valorFinal = (int) valorFinal + 0.5f;
+                } else {
+                    valorFinal = (int) valorFinal + 1.5f;
+                }
+            } else if (casaDecimal == 1) {
+                valorFinal = (((porcentagem / 100) * preco) + preco);
+                float resultado = valorFinal - (int) valorFinal;
+                if (resultado > 0) {
+                    valorFinal = (int) valorFinal + 1;
+                }
+            } else {
+                valorFinal = (((porcentagem / 100) * preco) + preco);
+                String verificador = String.valueOf(valorFinal);
+                if (verificador.length() > 5){
+                    valorFinal = convertDigits(valorFinal);
+                }
+            }
+        } else if (arredondaMaisMenos.equals("praMenos")) {
+            if (casaDecimal == 0.50f) {
+                valorFinal = (((porcentagem / 100) * preco) + preco);
+                float resultado = valorFinal - (int) valorFinal;
+                if (resultado < 0.5) {
+                    valorFinal = (int) valorFinal - 0.5f;
+                } else {
+                    valorFinal = (int) valorFinal + 0.5f;
+                }
+            } else if (casaDecimal == 1) {
+                valorFinal = (((porcentagem / 100) * preco) + preco);
+                float resultado = valorFinal - (int) valorFinal;
+                if (resultado > 0) {
+                    valorFinal = (int) valorFinal;
+                }
+            } else {
+                valorFinal = (((porcentagem / 100) * preco) + preco);
+                String verificador = String.valueOf(valorFinal);
+                if (verificador.length() > 5){
+                    valorFinal = convertDigits(valorFinal);
+                }
+            }
+        }
+        return valorFinal;
+    }
+}
+~~~
+
 ## Desenvolvedor
 
 | [<img src="https://avatars.githubusercontent.com/u/82123497?v=4" width=100><br><sub>Tiago Moreira<br>(Desenvolvedor)</sub>](https://github.com/tgzx) |
