@@ -24,7 +24,10 @@ public class GestaoDePreco {
                 }
             } else {
                 valorFinal = (((porcentagem / 100) * preco) + preco);
-                valorFinal = convertDigits(valorFinal);
+                String verificador = String.valueOf(valorFinal);
+                if (verificador.length() > 5){
+                    valorFinal = convertDigits(valorFinal);
+                }
             }
         } else if (arredondaMaisMenos.equals("praMenos")) {
             if (casaDecimal == 0.50f) {
@@ -40,6 +43,12 @@ public class GestaoDePreco {
                 float resultado = valorFinal - (int) valorFinal;
                 if (resultado > 0) {
                     valorFinal = (int) valorFinal;
+                }
+            } else {
+                valorFinal = (((porcentagem / 100) * preco) + preco);
+                String verificador = String.valueOf(valorFinal);
+                if (verificador.length() > 5){
+                    valorFinal = convertDigits(valorFinal);
                 }
             }
         }

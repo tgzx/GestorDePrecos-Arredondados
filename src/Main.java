@@ -18,7 +18,7 @@ public class Main {
         // Consulte a classe GestaoDePreco.java
 
         // ******************************************** Teste 1 **************************************************//
-        produto.setPorcentagem(18.25f, "", 0);
+        produto.setPorcentagem(18.25f, "praMais", 0.50f);
         produto2.setPorcentagem(800, "praMais", 1);
 
         System.out.println("Precos aumentados: ");
@@ -30,7 +30,7 @@ public class Main {
         produto2.setPreco(2);
 
         produto.setPorcentagem(18.25f, "praMais", 1);
-        produto2.setPorcentagem(800, "praMenos", 1);
+        produto2.setPorcentagem(880, "praMenos", 1);
 
         System.out.println("Precos aumentados: ");
         produto.status();
