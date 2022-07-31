@@ -1,4 +1,4 @@
-<h1>GestorDePrecos-Softcom</h1> 
+<h1>GestorDePrecos-Arredondados</h1> 
 <h3>Sugestão de Melhoria para o Gestor de Preços do Softshop.</h3>
 
 <p align="center">
