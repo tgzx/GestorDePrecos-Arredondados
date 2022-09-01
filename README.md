@@ -1,8 +1,7 @@
 <h1>GestorDePrecos-Arredondados</h1> 
-<h3>Sugestão de Melhoria para o Gestor de Preços do Softshop.</h3>
+<h3>Gestor de Preços Inteligente.</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=softcom&message=softshop&color=yellow&style=for-the-badge&logo=java"/>
   <img src="https://img.shields.io/static/v1?label=code&message=java&color=red&style=for-the-badge&logo=java"/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=rodando&color=GREEN&style=for-the-badge"/>
 </p>
@@ -20,7 +19,7 @@
 ## Descrição do projeto 
 
 <p align="justify">
-- No atual momento de crise e de forte concorrência no mercado, o empresário precisa de agilidade e praticidade na gestão empresarial. Se faz necessário desenvolver soluções que facilitem a vida do empresário durante o uso do sistema. E o gestor de preços precisa ser um facilitador e não mais um obstáculo. Fazer os preços de um por um é dispendioso, tanto na importação de nota fiscal de entrada bem como na gestão de preços. Aumentar a praticidade no uso do sistema, principalmente na importação de nota fiscal de entrada, pode fazer com que o cliente fique apaixonado e acomodado com o sistema, podendo resultar até mesmo em indicações.
+- No atual momento de crise e de forte concorrência no mercado, o empresário precisa de agilidade e praticidade na gestão empresarial. Se faz necessário desenvolver soluções que facilitem a vida do empresário durante o uso do sistema. E o gestor de preços precisa ser um facilitador e não mais um obstáculo. Fazer os preços de um por um é dispendioso, tanto na importação de nota fiscal de entrada bem como na gestão de preços. Aumentar a praticidade no uso do sistema, principalmente em sistemas em que se é possível realizar a importação de nota fiscal de entrada de mercadorias, pode fazer com que o cliente fique apaixonado e acomodado com o sistema, podendo resultar até mesmo em indicações.
 </p>
 
 
@@ -142,4 +141,4 @@ public class GestaoDePreco {
 
 The [MIT License]() (MIT)
 
-Copyright :copyright: 2022 - GestorDePrecos-Softcom
+Copyright :copyright: 2022 - GestorDePrecos-Arredondados
